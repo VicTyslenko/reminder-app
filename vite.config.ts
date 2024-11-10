@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths(), svgr({ exportAsDefault: true })],
   server: {
     open: true,
-    port: 5173,
+    port: 5174,
     cors: false,
   },
 });
