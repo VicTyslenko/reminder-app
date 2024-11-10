@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     #root {
         position: relative;
         height: 100vh;
-        background-color:#121B28;
+        background-color:#586d8d;
     }
 
     ::-webkit-scrollbar {

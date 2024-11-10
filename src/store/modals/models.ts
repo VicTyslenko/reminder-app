@@ -2,8 +2,8 @@ import { ReactNode } from "react";
 
 export type ModalWindowMeta = {
   controls?: {
-    onSubmit: () => void;
-    onCancel: () => void;
+    onSubmit?: () => void;
+    onCancel?: () => void;
   };
 };
 

@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { modalSlice } from "./modals";
+import { listSlice } from "./lists";
 
 const RootReducer = combineReducers({
   [modalSlice.name]: modalSlice.reducer,
+  [listSlice.name]: listSlice.reducer,
 });
 
 export const store = configureStore({

@@ -7,6 +7,16 @@ export const InputWrapp = styled.div`
   display: flex;
   gap: 20px;
   align-items: center;
+
+  & .search-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 6px;
+  }
+  & path {
+    fill: #fff;
+  }
 `;
 
 export const InputInner = styled.input`
