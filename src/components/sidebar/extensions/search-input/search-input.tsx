@@ -1,5 +1,9 @@
 import { DefaultInput } from "shared/components/input/default-input";
-
+import { SearchInputWrapp } from "../styles";
 export const SearchInput = () => {
-  return <DefaultInput searchIcon placeholder="Search" />;
+  return (
+    <SearchInputWrapp>
+      <DefaultInput searchIcon placeholder="Search" />
+    </SearchInputWrapp>
+  );
 };

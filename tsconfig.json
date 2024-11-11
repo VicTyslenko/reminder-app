@@ -2,7 +2,12 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "baseUrl": "src",
-    "outDir": "dist"
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "strict": true,
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "es2015"]
   },
   "include": ["src", "vite.config.ts", "public"],
   "exclude": ["node_modules", "dist"]

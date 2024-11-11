@@ -11,11 +11,13 @@ export const listSlice = createSlice({
   initialState,
 
   reducers: {
+    addListItem: (state, action: PayloadAction<ListInfo>) => {
+      state.listInfo.push(action.payload);
+    },
     setListInfo: (state, action: PayloadAction<ListInfo[]>) => {
       state.listInfo = action.payload;
     },
   },
 });
 
-export const { setListInfo } = listSlice.actions;
-
+export const { setListInfo, addListItem } = listSlice.actions;

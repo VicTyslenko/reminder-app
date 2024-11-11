@@ -5,6 +5,7 @@ export const SidebarWrapp = styled.div`
   background-color: rgba(38, 38, 44, 0.5);
   border-radius: inherit;
   padding: 50px 10px;
+
   & .default-button {
     position: absolute;
     bottom: 0;

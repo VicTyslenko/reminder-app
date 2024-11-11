@@ -1,8 +1,8 @@
 import styled from "styled-components";
-
+import { DefaultButton } from "shared/components/button";
 export const NewListWrapp = styled.div`
   width: 500px;
-height: 100%;
+  height: 100%;
   & .default-typography {
     text-align: center;
     color: #fff;
@@ -12,6 +12,9 @@ height: 100%;
   }
 `;
 
+export const SearchInputWrapp = styled.div`
+  margin-bottom: 30px;
+`;
 export const NewListInner = styled.div`
   & .search-icon {
     width: 15px;
@@ -22,7 +25,11 @@ export const NewListInner = styled.div`
   justify-content: space-between;
   min-height: 280px;
 `;
-export const ButtonsWrapp = styled.div`
+
+type Props = {
+  disabled?: boolean;
+};
+export const ButtonsWrapp = styled.div<Props>`
   display: flex;
   align-items: center;
   justify-content: end;
@@ -43,6 +50,8 @@ export const ButtonsWrapp = styled.div`
     align-items: center;
   }
   & .submit-button {
-    background-color: #40c240;
+    background-color: ${({ disabled }) => (disabled ? "#454545" : "#40c240")};
   }
 `;
+
+

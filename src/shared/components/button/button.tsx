@@ -1,9 +1,9 @@
 import { Props } from "./models";
 import { ButtonInner } from "./styles";
 
-export const DefaultButton = ({ children, ...props }: Props) => {
+export const DefaultButton = ({ children, disabled, selected, ...props }: Props) => {
   return (
-    <ButtonInner className="default-button" {...props}>
+    <ButtonInner disabled={disabled} selected={selected} className="default-button" {...props}>
       {children}
     </ButtonInner>
   );
